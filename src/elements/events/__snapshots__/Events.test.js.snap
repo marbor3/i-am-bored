@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Elements - Events given an array of events, it renders all events 1`] = `
+<div>
+  <ul
+    class="events"
+  >
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          Steve Hackett Genesis Revisited - Seconds Out & More
+        </h2>
+        <main />
+        <a
+          href="/event/0ga2EdN7prc"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          Muzyka zespołu METALLICA symfonicznie
+        </h2>
+        <main />
+        <a
+          href="/event/0oO71TSv4Ed"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          Happysad
+        </h2>
+        <main />
+        <a
+          href="/event/0oz51ozk3ob"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Elements - Events with empty events list theres nothing to render 1`] = `<div />`;
+
+exports[`Elements - Events without any events theres nothing to render 1`] = `<div />`;

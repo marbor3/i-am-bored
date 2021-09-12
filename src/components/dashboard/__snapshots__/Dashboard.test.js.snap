@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components - Dashboard renders Dashboard 1`] = `
+<div>
+  <label>
+    Filters:
+  </label>
+  <select>
+    <option
+      value=""
+    >
+      All
+    </option>
+    <option
+      value="KnvZfZ7vAeA"
+    >
+      Rock
+    </option>
+    <option
+      value="KnvZfZ7vAvv"
+    >
+      Alternative
+    </option>
+    <option
+      value="KnvZfZ7vAee"
+    >
+      R&B
+    </option>
+    <option
+      value="KnvZfZ7vAeJ"
+    >
+      Classical
+    </option>
+  </select>
+  <ul
+    class="events"
+  >
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          Michał Wiśniewski Akustycznie Część 2 - ZAWSZE NAPRZÓD - NIGDY WSTECZ
+        </h2>
+        <div>
+          2021-09-23
+           
+          19:00:00
+        </div>
+        <main />
+        <a
+          href="/event/Z698xZQpZa7ca"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          Eivor
+        </h2>
+        <div>
+          2021-11-04
+           
+        </div>
+        <main />
+        <a
+          href="/event/Z698xZQpZa73S"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+    <li
+      class="events__list-item"
+      data-testid="event-list-item"
+    >
+      <article
+        class="article null"
+        data-testid="event"
+      >
+        <h2>
+          <button>
+            fav
+          </button>
+          PUNKY REGGAE live 2021: Farben Lehre + Sexbomba + Zenek Kupatasa
+        </h2>
+        <div>
+          2021-09-18
+           
+          19:00:00
+        </div>
+        <main />
+        <a
+          href="/event/Z698xZQpZaA8K"
+        >
+          more info
+        </a>
+      </article>
+    </li>
+  </ul>
+  <div
+    class="dashboard__pagination"
+  >
+    <button
+      class="dashboard__pagination-button"
+    >
+      Load more
+    </button>
+  </div>
+</div>
+`;

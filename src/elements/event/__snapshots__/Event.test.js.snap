@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Elements - Event renders given event 1`] = `
+<div>
+  <article
+    class="article null"
+    data-testid="event"
+  >
+    <h2>
+      <button>
+        fav
+      </button>
+      Steve Hackett Genesis Revisited - Seconds Out & More
+    </h2>
+    <main />
+    <a
+      href="/event/undefined"
+    >
+      more info
+    </a>
+  </article>
+</div>
+`;

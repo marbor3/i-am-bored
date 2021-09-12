@@ -1,0 +1,13 @@
+.events {
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 32px;
+  max-width: 1248px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.events__list-item {
+  margin-top: 24px;
+}
