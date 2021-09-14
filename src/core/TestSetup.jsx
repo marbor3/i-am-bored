@@ -1,9 +1,7 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import { StateProvider } from "../state/DashboardState";
-import dashboardReducer, {
-  createDashboardIniitalState,
-} from "../state/DashboardReducer";
+import React from 'react';
+import { render } from '@testing-library/react';
+import { StateProvider } from '../state/DashboardState';
+import dashboardReducer, { createDashboardIniitalState } from '../state/DashboardReducer';
 
 const mockGeolocation = {
   getCurrentPosition: jest.fn().mockImplementation((success) =>
@@ -23,10 +21,7 @@ global.navigator.geolocation = mockGeolocation;
 
 const renderWithContext = (component, options) =>
   render(
-    <StateProvider
-      reducer={dashboardReducer}
-      initialState={createDashboardIniitalState(options)}
-    >
+    <StateProvider reducer={dashboardReducer} initialState={createDashboardIniitalState(options)}>
       {component}
     </StateProvider>
   );

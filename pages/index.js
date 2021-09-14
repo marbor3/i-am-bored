@@ -1,9 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
-import Dashboard from "../src/components/dashboard/Dashboard";
-import Location from "../src/components/location/Location";
+import Head from 'next/head';
+import Image from 'next/image';
+import Dashboard from '../src/components/dashboard/Dashboard';
+import Location from '../src/components/location/Location';
 
-import styles from "../styles/Home.module.css";
+import styles from '../styles/Home.module.css';
 
 export default function Home({ page }) {
   return (
@@ -20,12 +20,7 @@ export default function Home({ page }) {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.footerLink}
-        >
+        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>
           this is the footer
         </a>
       </footer>

@@ -1,10 +1,9 @@
-import { useCallback, useRef } from "react";
-import { ACTION_CHANGE_CATEGORY } from "../../state/DashboardReducer";
-import { useDashboardContext } from "../../state/DashboardState";
+import { useCallback, useRef } from 'react';
+import { ACTION_CHANGE_CATEGORY } from '../../state/DashboardReducer';
+import { useDashboardContext } from '../../state/DashboardState';
 
 export default function Filters() {
-  const [{ categoriesOptions, currentCategory }, dispatch] =
-    useDashboardContext();
+  const [{ categoriesOptions, currentCategory }, dispatch] = useDashboardContext();
   const selectRef = useRef(null);
   const changeCategory = useCallback(() => {
     const categoryId = selectRef.current.value;
@@ -23,11 +22,7 @@ export default function Filters() {
       <select onChange={changeCategory} ref={selectRef}>
         {categoriesOptions.map(({ label, value }) => {
           return (
-            <option
-              key={value}
-              value={value}
-              defaultValue={currentCategory === value}
-            >
+            <option key={value} value={value} defaultValue={currentCategory === value}>
               {label}
             </option>
           );

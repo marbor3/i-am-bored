@@ -1,16 +1,12 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect } from 'react';
 
 export function makeCancelable(promise) {
   let isCanceled = false;
 
   const wrappedPromise = new Promise((resolve, reject) => {
     promise
-      .then((val) =>
-        isCanceled ? reject(new Error("Promise was canceled")) : resolve(val)
-      )
-      .catch((error) =>
-        isCanceled ? reject(new Error("Promise was canceled")) : reject(error)
-      );
+      .then((val) => (isCanceled ? reject(new Error('Promise was canceled')) : resolve(val)))
+      .catch((error) => (isCanceled ? reject(new Error('Promise was canceled')) : reject(error)));
   });
 
   return {
@@ -26,9 +22,7 @@ export default function useCancellablePromise(cancelable = makeCancelable) {
 
   // test if the input argument is a cancelable promise generator
   if (cancelable(emptyPromise).cancel === undefined) {
-    throw new Error(
-      "promise wrapper argument must provide a cancel() function"
-    );
+    throw new Error('promise wrapper argument must provide a cancel() function');
   }
 
   const promises = useRef();
